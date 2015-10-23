@@ -35,8 +35,8 @@ bed_file_path = /user/restuadi/project/work/UCSC_exomes_bedfile
 ## Do you want to use VQSR (yes/no); ‘yes’ recommended, if no, Hard filtering applied
 VQSR = yes
 
-# if yes, please give the gvcf list folder
-gvcf_directory = /user/restuadi/work/gvcf
+# if yes, please give the gvcf list (extension must be .list)
+gvcf_directory = /user/restuadi/work/gvcf.list
 
 
 ########################### Users must manually set-up the above information for using EasyGATK! ####################################

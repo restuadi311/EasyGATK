@@ -138,7 +138,7 @@ def make_haplotype_HF_pipeline(settings_dict, template, file_out_name, minPrune)
 	minPrune = str(settings_dict.get('minprunning'))
 	VQSR = settings_dict.get('vqsr')
 	gvcf_path = settings_dict.get('gvcf_directory')
-	gvcf_path = work_dir+'/gvcf.list'
+	#gvcf_path = work_dir+'/gvcf.list'
 	
 	GAT = settings_dict.get('GATK_path')
 	callMem = settings_dict.get('call_memory')
