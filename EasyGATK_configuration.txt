@@ -32,7 +32,7 @@ GATK_bundle = /bin/GATK_bundle2.5/hg19/
 bed_file_path = /user/restuadi/project/work/UCSC_exomes_bedfile
 
 
-## Do you want to use VQSR (yes/no); ‘yes’ recommended, if no, Hard filtering applied
+## Do you want to use VQSR (yes/no)? By default is 'yes'. If 'no', hard filtering will be applied.
 VQSR = yes
 
 # if yes, please give the gvcf list (extension must be .list)
