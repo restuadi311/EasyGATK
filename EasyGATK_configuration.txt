@@ -35,7 +35,7 @@ bed_file_path = /user/restuadi/project/work/UCSC_exomes_bedfile
 ## Do you want to use VQSR (yes/no)? By default is 'yes'. If 'no', hard filtering will be applied.
 VQSR = yes
 
-# if yes, please give the gvcf list (extension must be .list)
+# If yes, for the successful application of VQSR, please provide the "gvcf.list" file which lists the full path of all borrowed "g.vcf" files (each line represents one borrowed gvcf file). Note the file name can be different but the file extension must be ".list". An example of the "gvcf.list" is provided in the template folder. EasyGATK users may just change the path and file name based on the template file. In "gvcf.list" users don't need to provide the full path for the current processing sample because the gvcf file of the current processing sample will be automatically added in the end of the "gvcf.list" file.
 gvcf_directory = /user/restuadi/work/gvcf.list
 
 
@@ -73,5 +73,11 @@ minpruning = 3
 
 
 ####### Step 4 : Variant Calling using HaplotypeCaller ########
-# Memory for HaplotypeCaller and Hard Filtering (the default value of 20G memory will work in most cases). Note that small minPrune value or data with high sequencing depth (e.g. >100X) may require more memory in this step.
+# Memory for HaplotypeCaller, hard filtering and VQSR (the default value of 20G memory will work in most cases). Note that small minPrune value or data with high sequencing depth (e.g. >100X) may require more memory in this step.
 call_memory = 20G
+
+
+####### We are currently working to separate the HaplotypeCaller and VQSR/hard filtering functions so that users can easily use EasyGATK to process borrowed WES samples as well (Step 4: HaplotypeCaller & Step 5: VQSR/hard filtering). The new version will be released soon. #######
+
+
+
