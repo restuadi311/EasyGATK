@@ -54,6 +54,6 @@ Minimum requirements:
   * All referece files (GAKT bundle files) are downloaded.
 
 Note that the GATK bundle file can be downloaded from the below location as addressed here http://gatkforums.broadinstitute.org/discussion/1215/how-can-i-access-the-gsa-public-ftp-server:
-* location: ftp.broadinstitute.org
-* username: gsapubftp-anonymous
+* location: `ftp.broadinstitute.org`
+* username: `gsapubftp-anonymous`
 * password: <blank>
