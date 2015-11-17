@@ -20,19 +20,20 @@ There are several files in this package:
 
 ##General instructions
 1. Set paths and parameters in `EasyGATK_configuration.txt`
-* Most default values and examples have already been provided
-* Use the absolute path for software tools (e.g. `/usr/username/data/GenomeAnalysisTK-3.4-0/GenomeAnalysisTK.jar`)
-* Use the absolute path for working directory and input sample directory (e.g. `/usr/username/woking_dir/`)
+  * Most default values and examples have already been provided
+  * Use the absolute path for software tools (e.g. `/usr/username/data/GenomeAnalysisTK-3.4-0/GenomeAnalysisTK.jar`)
+  * Use the absolute path for working directory and input sample directory (e.g. `/usr/username/woking_dir/`)
 
 2. run the script (type in shell: `python EasyGATK_ver1.py`)
 
 3. EasyGATK will generate 4 shell script files (.sh)
-* `Step1_MappingReads_sample_name.sh`
-* `Step2_BAMpre-processing_sample_name.sh`
-* `Step3_CheckCoverage_sample_name.sh` (not created if `minprune_estimate = no`)
-* `Step4_VariantCalling_sample_name.sh` (note that the "Step4" file will be created after run the "Step3" script if `minprune_estimate = yes`)
+  * `Step1_MappingReads_sample_name.sh`
+  * `Step2_BAMpre-processing_sample_name.sh`
+  * `Step3_CheckCoverage_sample_name.sh` (not created if `minprune_estimate = no`)
+  * `Step4_VariantCalling_sample_name.sh` (note that the "Step4" file will be created after run the "Step3" script if `minprune_estimate = yes`)
 
 4. Run the .sh file
+
 Users may directly run these shell script files one by one on terminal using a computing node by making the `.sh` file executable (`chmod a+x /path/to/Step1_MappingReads_sample_name.sh`), and then running `./Step1_MappingReads_sample_name.sh`
 
 Users may also submit the `.sh` commands using job submitting system such as `qsub`, or using computer array to parallel jobs.
@@ -49,11 +50,12 @@ If you know the depth of coverage or want to manually set the minPruning value, 
 EasyGATK v1.0 has been tested based on GATK v3.2.2, GATK bundle 2.5 hg19, Samtools v0.1.17, Picard v1.72, and BWA v0.6.2.
 
 Minimum requirements:
+
 1. To run EasyGATK.py:
-* Requires Python 2.6 or above
+  * Requires Python 2.6 or above
 2. To run the whole BWA-GATK pipeline
-* All software tools (GATK3, samtools, Picard and BWA) are installed.
-* All referece files (GAKT bundle files) are downloaded.
+  * All software tools (GATK3, samtools, Picard and BWA) are installed.
+  * All referece files (GAKT bundle files) are downloaded.
 
 Note that the GATK bundle file can be downloaded from the below location as addressed here http://gatkforums.broadinstitute.org/discussion/1215/how-can-i-access-the-gsa-public-ftp-server:
   location: ftp.broadinstitute.org
