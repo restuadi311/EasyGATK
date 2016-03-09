@@ -30,7 +30,7 @@ java -XmxXCallMemory -jar XGATK_path -l INFO \
 							-T SelectVariants \
 							-R XGATKbundlePath/hg19/ucsc.hg19.fasta \
 							-V Xworking_path/Xsample_name.asdrr.raw.vcf \
-							-L bedFile_path \
+							-L XbedFile_path \
 							-selectType SNP \
 							-o Xworking_path/Xsample_name.asdrr.raw_snps.vcf 
 
